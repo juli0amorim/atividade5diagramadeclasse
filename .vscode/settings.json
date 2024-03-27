@@ -1,9 +1,10 @@
 {
     "java.project.sourcePaths": [
-        "aulas_teoricas",
+        "aulas_teorica/src",
         "aulas_praticas/src",
         "atividade_avaliativa_02/src",
-        "aulas_teorica/src"
+        "atividade_avaliativa_02/nota_zeroadez/src",
+        "atividade_avaliativa_02/usuario_senha/src"
     ],
     "java.project.outputPath": "bin",
     "java.project.referencedLibraries": [
