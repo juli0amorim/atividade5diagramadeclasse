@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class App {
+public class nota_zerodez {
     public static void main(String[] args){
         Scanner scanner = new Scanner(System.in);
         
