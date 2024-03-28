@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class App {
+public class usuario_senha {
     public static void main(String[] args){
         Scanner scanner = new Scanner(System.in);
         String nomeUsuario, senha;
