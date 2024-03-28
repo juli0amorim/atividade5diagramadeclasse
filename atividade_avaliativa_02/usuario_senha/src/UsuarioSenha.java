@@ -1,9 +1,10 @@
 import java.util.Scanner;
 
-public class usuario_senha {
+public class UsuarioSenha {
     public static void main(String[] args){
         Scanner scanner = new Scanner(System.in);
         String nomeUsuario, senha;
+        boolean senhaIgualUser;
 
         do {
             System.out.println("Digite o nome de usuário: ");
@@ -12,11 +13,13 @@ public class usuario_senha {
             System.out.println("Digite sua senha: ");
             senha = scanner.nextLine();
 
-            if (senha.equals(nomeUsuario)) {
+            senhaIgualUser = senha.equals(nomeUsuario);
+
+            if (senhaIgualUser) {
                 System.out.println("Erro: A senha não pode ser igual ao nome de usuário!");
             }
-        } while(senha.equals(nomeUsuario));
-
+        } while(senhaIgualUser);
+            
         System.out.println("Usuário registrado com sucesso!");
 
         scanner.close();
