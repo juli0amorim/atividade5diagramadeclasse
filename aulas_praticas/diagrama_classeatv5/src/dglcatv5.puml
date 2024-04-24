@@ -1,0 +1,55 @@
+@startuml VendaAtv
+class Loja {
+  - id: string
+  - nome: string
+  - nomeFant: string
+  - endereco: string
+  - telefone: string
+  + cadastrarFunc(): string
+  + cadastrarCliente(): string
+}
+
+class Cliente {
+  - nome: string
+  - cpf: string
+  - telefone: string
+  - email: string
+  - produtos: Produto[]
+  + escolherProd(): Produto[]
+  + removerProd(): void
+}
+
+class Produto{
+  - nome: string
+  - id: string
+  - quantidade: int
+  - preco: double
+  + atualizarPreco(): void
+  + atualizarQuant(): void
+}
+
+class Funcionario{
+  - nome: string
+  - id: string
+  - cpf: string
+  - email: string
+  - endereco: string
+  - cargo: string
+  + atualizarProd(): Produto
+}
+
+class Pedido{
+  - id: string
+  - cliente: Cliente
+  - data: date
+  - status: string
+  + adicionarProd(): void
+  + removerProd(): void
+}
+Loja -- Cliente
+Loja -- Funcionario 
+Funcionario -- Cliente
+Cliente -- Produto
+Produto -- Pedido
+Produto -- Funcionario
+@enduml
